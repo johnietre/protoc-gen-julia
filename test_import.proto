@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package protoc_gen_julia;
+
+message TestMsgImport {
+  string field1 = 1;
+  int32 field2 = 2;
+}

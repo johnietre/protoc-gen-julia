@@ -1,0 +1,1309 @@
+{
+  "fileToGenerate":  [
+    "test.proto"
+  ],
+  "protoFile":  [
+    {
+      "name":  "test_import.proto",
+      "package":  "protoc_gen_julia",
+      "messageType":  [
+        {
+          "name":  "TestMsgImport",
+          "field":  [
+            {
+              "name":  "field1",
+              "number":  1,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_STRING",
+              "jsonName":  "field1"
+            },
+            {
+              "name":  "field2",
+              "number":  2,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_INT32",
+              "jsonName":  "field2"
+            }
+          ]
+        }
+      ],
+      "sourceCodeInfo":  {
+        "location":  [
+          {
+            "span":  [
+              0,
+              0,
+              7,
+              1
+            ]
+          },
+          {
+            "path":  [
+              12
+            ],
+            "span":  [
+              0,
+              0,
+              18
+            ]
+          },
+          {
+            "path":  [
+              2
+            ],
+            "span":  [
+              2,
+              0,
+              25
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0
+            ],
+            "span":  [
+              4,
+              0,
+              7,
+              1
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              1
+            ],
+            "span":  [
+              4,
+              8,
+              21
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              0
+            ],
+            "span":  [
+              5,
+              2,
+              20
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              0,
+              5
+            ],
+            "span":  [
+              5,
+              2,
+              8
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              0,
+              1
+            ],
+            "span":  [
+              5,
+              9,
+              15
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              0,
+              3
+            ],
+            "span":  [
+              5,
+              18,
+              19
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              1
+            ],
+            "span":  [
+              6,
+              2,
+              19
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              1,
+              5
+            ],
+            "span":  [
+              6,
+              2,
+              7
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              1,
+              1
+            ],
+            "span":  [
+              6,
+              8,
+              14
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              1,
+              3
+            ],
+            "span":  [
+              6,
+              17,
+              18
+            ]
+          }
+        ]
+      },
+      "syntax":  "proto3"
+    },
+    {
+      "name":  "test.proto",
+      "package":  "protoc_gen_julia",
+      "dependency":  [
+        "test_import.proto"
+      ],
+      "messageType":  [
+        {
+          "name":  "Types",
+          "field":  [
+            {
+              "name":  "type_double",
+              "number":  1,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_DOUBLE",
+              "jsonName":  "typeDouble"
+            },
+            {
+              "name":  "type_float",
+              "number":  2,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_FLOAT",
+              "jsonName":  "typeFloat"
+            },
+            {
+              "name":  "type_int32",
+              "number":  3,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_INT32",
+              "jsonName":  "typeInt32"
+            },
+            {
+              "name":  "type_int64",
+              "number":  4,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_INT64",
+              "jsonName":  "typeInt64"
+            },
+            {
+              "name":  "type_uint32",
+              "number":  5,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_UINT32",
+              "jsonName":  "typeUint32"
+            },
+            {
+              "name":  "type_uint64",
+              "number":  6,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_UINT64",
+              "jsonName":  "typeUint64"
+            },
+            {
+              "name":  "type_sint32",
+              "number":  7,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_SINT32",
+              "jsonName":  "typeSint32"
+            },
+            {
+              "name":  "type_sint64",
+              "number":  8,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_SINT64",
+              "jsonName":  "typeSint64"
+            },
+            {
+              "name":  "type_fixed32",
+              "number":  9,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_FIXED32",
+              "jsonName":  "typeFixed32"
+            },
+            {
+              "name":  "type_fixed64",
+              "number":  10,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_FIXED64",
+              "jsonName":  "typeFixed64"
+            },
+            {
+              "name":  "type_sfixed32",
+              "number":  11,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_SFIXED32",
+              "jsonName":  "typeSfixed32"
+            },
+            {
+              "name":  "type_sfixed64",
+              "number":  12,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_SFIXED64",
+              "jsonName":  "typeSfixed64"
+            },
+            {
+              "name":  "type_bool",
+              "number":  13,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_BOOL",
+              "jsonName":  "typeBool"
+            },
+            {
+              "name":  "type_string",
+              "number":  14,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_STRING",
+              "jsonName":  "typeString"
+            },
+            {
+              "name":  "type_bytes",
+              "number":  15,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_BYTES",
+              "jsonName":  "typeBytes"
+            }
+          ]
+        },
+        {
+          "name":  "TestMsgImported",
+          "field":  [
+            {
+              "name":  "test_msg",
+              "number":  1,
+              "label":  "LABEL_OPTIONAL",
+              "type":  "TYPE_MESSAGE",
+              "typeName":  ".protoc_gen_julia.TestMsgImport",
+              "jsonName":  "testMsg"
+            }
+          ]
+        }
+      ],
+      "sourceCodeInfo":  {
+        "location":  [
+          {
+            "span":  [
+              0,
+              0,
+              26,
+              1
+            ]
+          },
+          {
+            "path":  [
+              12
+            ],
+            "span":  [
+              0,
+              0,
+              18
+            ]
+          },
+          {
+            "path":  [
+              2
+            ],
+            "span":  [
+              2,
+              0,
+              25
+            ]
+          },
+          {
+            "path":  [
+              3,
+              0
+            ],
+            "span":  [
+              4,
+              0,
+              27
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0
+            ],
+            "span":  [
+              6,
+              0,
+              22,
+              1
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              1
+            ],
+            "span":  [
+              6,
+              8,
+              13
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              0
+            ],
+            "span":  [
+              7,
+              2,
+              25
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              0,
+              5
+            ],
+            "span":  [
+              7,
+              2,
+              8
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              0,
+              1
+            ],
+            "span":  [
+              7,
+              9,
+              20
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              0,
+              3
+            ],
+            "span":  [
+              7,
+              23,
+              24
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              1
+            ],
+            "span":  [
+              8,
+              2,
+              23
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              1,
+              5
+            ],
+            "span":  [
+              8,
+              2,
+              7
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              1,
+              1
+            ],
+            "span":  [
+              8,
+              8,
+              18
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              1,
+              3
+            ],
+            "span":  [
+              8,
+              21,
+              22
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              2
+            ],
+            "span":  [
+              9,
+              2,
+              23
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              2,
+              5
+            ],
+            "span":  [
+              9,
+              2,
+              7
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              2,
+              1
+            ],
+            "span":  [
+              9,
+              8,
+              18
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              2,
+              3
+            ],
+            "span":  [
+              9,
+              21,
+              22
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              3
+            ],
+            "span":  [
+              10,
+              2,
+              23
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              3,
+              5
+            ],
+            "span":  [
+              10,
+              2,
+              7
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              3,
+              1
+            ],
+            "span":  [
+              10,
+              8,
+              18
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              3,
+              3
+            ],
+            "span":  [
+              10,
+              21,
+              22
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              4
+            ],
+            "span":  [
+              11,
+              2,
+              25
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              4,
+              5
+            ],
+            "span":  [
+              11,
+              2,
+              8
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              4,
+              1
+            ],
+            "span":  [
+              11,
+              9,
+              20
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              4,
+              3
+            ],
+            "span":  [
+              11,
+              23,
+              24
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              5
+            ],
+            "span":  [
+              12,
+              2,
+              25
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              5,
+              5
+            ],
+            "span":  [
+              12,
+              2,
+              8
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              5,
+              1
+            ],
+            "span":  [
+              12,
+              9,
+              20
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              5,
+              3
+            ],
+            "span":  [
+              12,
+              23,
+              24
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              6
+            ],
+            "span":  [
+              13,
+              2,
+              25
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              6,
+              5
+            ],
+            "span":  [
+              13,
+              2,
+              8
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              6,
+              1
+            ],
+            "span":  [
+              13,
+              9,
+              20
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              6,
+              3
+            ],
+            "span":  [
+              13,
+              23,
+              24
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              7
+            ],
+            "span":  [
+              14,
+              2,
+              25
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              7,
+              5
+            ],
+            "span":  [
+              14,
+              2,
+              8
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              7,
+              1
+            ],
+            "span":  [
+              14,
+              9,
+              20
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              7,
+              3
+            ],
+            "span":  [
+              14,
+              23,
+              24
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              8
+            ],
+            "span":  [
+              15,
+              2,
+              27
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              8,
+              5
+            ],
+            "span":  [
+              15,
+              2,
+              9
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              8,
+              1
+            ],
+            "span":  [
+              15,
+              10,
+              22
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              8,
+              3
+            ],
+            "span":  [
+              15,
+              25,
+              26
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              9
+            ],
+            "span":  [
+              16,
+              2,
+              28
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              9,
+              5
+            ],
+            "span":  [
+              16,
+              2,
+              9
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              9,
+              1
+            ],
+            "span":  [
+              16,
+              10,
+              22
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              9,
+              3
+            ],
+            "span":  [
+              16,
+              25,
+              27
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              10
+            ],
+            "span":  [
+              17,
+              2,
+              30
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              10,
+              5
+            ],
+            "span":  [
+              17,
+              2,
+              10
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              10,
+              1
+            ],
+            "span":  [
+              17,
+              11,
+              24
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              10,
+              3
+            ],
+            "span":  [
+              17,
+              27,
+              29
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              11
+            ],
+            "span":  [
+              18,
+              2,
+              30
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              11,
+              5
+            ],
+            "span":  [
+              18,
+              2,
+              10
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              11,
+              1
+            ],
+            "span":  [
+              18,
+              11,
+              24
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              11,
+              3
+            ],
+            "span":  [
+              18,
+              27,
+              29
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              12
+            ],
+            "span":  [
+              19,
+              2,
+              22
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              12,
+              5
+            ],
+            "span":  [
+              19,
+              2,
+              6
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              12,
+              1
+            ],
+            "span":  [
+              19,
+              7,
+              16
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              12,
+              3
+            ],
+            "span":  [
+              19,
+              19,
+              21
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              13
+            ],
+            "span":  [
+              20,
+              2,
+              26
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              13,
+              5
+            ],
+            "span":  [
+              20,
+              2,
+              8
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              13,
+              1
+            ],
+            "span":  [
+              20,
+              9,
+              20
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              13,
+              3
+            ],
+            "span":  [
+              20,
+              23,
+              25
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              14
+            ],
+            "span":  [
+              21,
+              2,
+              24
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              14,
+              5
+            ],
+            "span":  [
+              21,
+              2,
+              7
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              14,
+              1
+            ],
+            "span":  [
+              21,
+              8,
+              18
+            ]
+          },
+          {
+            "path":  [
+              4,
+              0,
+              2,
+              14,
+              3
+            ],
+            "span":  [
+              21,
+              21,
+              23
+            ]
+          },
+          {
+            "path":  [
+              4,
+              1
+            ],
+            "span":  [
+              24,
+              0,
+              26,
+              1
+            ]
+          },
+          {
+            "path":  [
+              4,
+              1,
+              1
+            ],
+            "span":  [
+              24,
+              8,
+              23
+            ]
+          },
+          {
+            "path":  [
+              4,
+              1,
+              2,
+              0
+            ],
+            "span":  [
+              25,
+              2,
+              46
+            ]
+          },
+          {
+            "path":  [
+              4,
+              1,
+              2,
+              0,
+              6
+            ],
+            "span":  [
+              25,
+              2,
+              32
+            ]
+          },
+          {
+            "path":  [
+              4,
+              1,
+              2,
+              0,
+              1
+            ],
+            "span":  [
+              25,
+              33,
+              41
+            ]
+          },
+          {
+            "path":  [
+              4,
+              1,
+              2,
+              0,
+              3
+            ],
+            "span":  [
+              25,
+              44,
+              45
+            ]
+          }
+        ]
+      },
+      "syntax":  "proto3"
+    }
+  ],
+  "compilerVersion":  {
+    "major":  4,
+    "minor":  22,
+    "patch":  2,
+    "suffix":  ""
+  }
+}

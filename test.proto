@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package protoc_gen_julia;
+
+import "test_import.proto";
+
+message Types {
+  double type_double = 1;
+  float type_float = 2;
+  int32 type_int32 = 3;
+  int64 type_int64 = 4;
+  uint32 type_uint32 = 5;
+  uint64 type_uint64 = 6;
+  sint32 type_sint32 = 7;
+  sint64 type_sint64 = 8;
+  fixed32 type_fixed32 = 9;
+  fixed64 type_fixed64 = 10;
+  sfixed32 type_sfixed32 = 11;
+  sfixed64 type_sfixed64 = 12;
+  bool type_bool = 13;
+  string type_string = 14;
+  bytes type_bytes = 15;
+}
+
+message TestMsgImported {
+  protoc_gen_julia.TestMsgImport test_msg = 1;
+}
